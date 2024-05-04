@@ -1,0 +1,16 @@
+{
+  "name": "24001143-synrgy7-muh-bcr-ch4",
+  "version": "1.0.0",
+  "description": "Challenge Chapter 4 - SYNRGY Academy Batch 7",
+  "main": "server.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css",
+    "start": "npm run build:css && nodemon server.js"
+  },
+  "type": "module",
+  "author": "Muhlis Ahmad Abdillah",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

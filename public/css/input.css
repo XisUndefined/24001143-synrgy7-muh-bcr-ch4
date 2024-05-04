@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .nav-line {
+    @apply w-[18px] h-[2px] rounded-sm block bg-[#222] my-1;
+  }
+
+  .nav-line__active > span:nth-child(1) {
+    @apply rotate-45;
+  }
+
+  .nav-line__active > span:nth-child(3) {
+    @apply -rotate-45;
+  }
+
+  .nav-line__active > span:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .overlay {
+    @apply fixed w-1/2 h-screen bg-black bg-opacity-60 z-10;
+  }
+}
+
+@layer components {
+  .about-card {
+    @apply p-6 rounded-lg border-[1px] border-[#d0d0d0] w-full;
+  }
+
+  .testimonial-card {
+    @apply flex flex-wrap sm:max-md:flex-nowrap md:max-lg:flex-wrap lg:flex-nowrap justify-center items-center sm:max-md:gap-11 lg:gap-11 bg-[#f1f3ff] mx-4 max-w-[360px] sm:max-w-[608px] md:max-w-[352px] lg:max-w-[480px] xl:max-w-[608px] px-10 py-8 rounded-lg;
+  }
+
+  .review-img {
+    @apply my-6;
+  }
+
+  .review {
+    @apply flex flex-wrap before:content-[url('./../images/rate.svg')] w-full justify-center sm:max-md:justify-start md:max-lg:justify-center lg:justify-start gap-2;
+  }
+
+  .accordion {
+    @apply text-sm font-light leading-5 text-start gap-4 border-[1px] rounded-[4px] flex w-full items-center justify-between p-4 after:content-[url("./../images/chevron-down.svg")] after:transform after:origin-center after:duration-200 after:ease-in-out after:aria-expanded:rotate-180;
+  }
+
+  .accordion-collapse {
+    @apply max-h-0 text-sm font-light leading-5 rounded-b-lg border-[1px] overflow-hidden transition-all ease-in-out duration-500;
+  }
+}

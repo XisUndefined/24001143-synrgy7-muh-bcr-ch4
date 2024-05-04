@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>BCR | Binar Car Rental</title>
+  </head>
+  <body>
+    <header class="fixed w-full flex justify-center bg-[#f1f3ff] z-[5]">
+      <div class="container px-4 py-6 flex justify-between">
+        <a href="/" class="bg-darkblue-700 text-darkblue-700 px-5">logo</a>
+        <button id="nav-toggle" class="z-50 block md:hidden">
+          <span
+            class="nav-line origin-top-left transition duration-300 ease-in-out"
+          ></span>
+          <span class="nav-line transition duration-300 ease-in-out"></span>
+          <span
+            class="nav-line origin-bottom-left transition duration-300 ease-in-out"
+          ></span>
+        </button>
+        <nav
+          id="nav-menu"
+          class="max-md:absolute max-md:right-0 max-md:top-0 max-md:h-screen max-md:w-1/2 max-md:bg-white max-md:py-7 max-md:px-4 z-20 hidden md:flex md:gap-8"
+        >
+          <ul
+            class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap text-sm leading-5 gap-4 md:gap-8 md:px-4 md:py-3"
+          >
+            <li class="max-md:w-full">
+              <a href="#services">Our Services</a>
+            </li>
+            <li class="max-md:w-full"><a href="#about">Why Us</a></li>
+            <li class="max-md:w-full">
+              <a href="#testimonial">Testimonial</a>
+            </li>
+            <li class="max-md:w-full"><a href="#faq">FAQ</a></li>
+          </ul>
+          <button
+            class="bg-limegreen-700 rounded-sm leading-5 max-md:my-4 px-4 py-3 text-white text-sm font-bold"
+          >
+            Register
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="flex w-full justify-center bg-[#f1f3ff]">
+        <div
+          class="container flex flex-wrap xl:flex-nowrap mt-[72px] md:mt-[92px] px-4 items-center"
+        >
+          <article class="w-full xl:w-1/2">
+            <h1 class="text-4xl leading-normal font-bold my-2">
+              Sewa &amp; Rental Mobil Terbaik di kawasan (Lokasimu)
+            </h1>
+            <p class="text-sm font-light leading-5 my-2">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+            <a
+              href="/cars"
+              class="bg-limegreen-700 rounded-sm inline-block leading-5 px-4 py-3 text-white text-sm font-bold my-2"
+            >
+              Mulai Sewa Mobil
+            </a>
+          </article>
+          <div class="mt-6 w-full xl:w-1/2 flex justify-center items-center">
+            <img src="./images/img_car.png" alt="Mercedes EQC 300kW Edition" />
+          </div>
+        </div>
+      </section>
+      <section id="services" class="flex w-full justify-center">
+        <div
+          class="container mx-auto items-center justify-center flex flex-wrap xl:flex-nowrap mt-[72px] md:mt-[92px] px-4 xl:px-16"
+        >
+          <div
+            class="w-full xl:w-1/2 flex justify-center items-center max-xl:px-12"
+          >
+            <img src="./images/img_service.png" alt="services" />
+          </div>
+          <article class="mt-6 w-full xl:w-1/2">
+            <h2 class="font-bold text-2xl leading-9 my-4">
+              Best Car Rental for any kind of trip in (Lokasimu)!
+            </h2>
+            <p class="font-light text-sm leading-5 my-4">
+              Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+              lebih murah dibandingkan yang lain, kondisi mobil baru, serta
+              kualitas pelayanan terbaik untuk perjalanan wisata bisnis,
+              wedding, meeting, dll.
+            </p>
+            <ul class="font-light text-sm leading-5 flex flex-wrap gap-4">
+              <li
+                class="flex w-full items-center before:content-[url('./../images/check.svg')] before:mr-4"
+              >
+                Sewa Mobil Dengan Supir di Bali 12 Jam
+              </li>
+              <li
+                class="flex w-full items-center before:content-[url('./../images/check.svg')] before:mr-4"
+              >
+                Sewa Mobil Lepas Kunci di Bali 24 Jam
+              </li>
+              <li
+                class="flex w-full items-center before:content-[url('./../images/check.svg')] before:mr-4"
+              >
+                Sewa Mobil Jangka Panjang Bulanan
+              </li>
+              <li
+                class="flex w-full items-center before:content-[url('./../images/check.svg')] before:mr-4"
+              >
+                Gratis Antar - Jemput Mobil di Bandara
+              </li>
+              <li
+                class="flex w-full items-center before:content-[url('./../images/check.svg')] before:mr-4"
+              >
+                Layanan Airport Transfer / Drop In Out
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="flex w-full justify-center">
+        <div
+          class="container mx-auto items-center justify-center flex flex-wrap xl:flex-nowrap mt-[72px] md:mt-[92px] px-4"
+        >
+          <article>
+            <h2
+              class="text-2xl font-bold leading-9 text-center xl:text-start my-5"
+            >
+              Why Us?
+            </h2>
+            <p
+              class="text-sm font-light leading-5 text-center xl:text-start my-5"
+            >
+              Mengapa harus pilih Binar Car Rental?
+            </p>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 my-5"
+            >
+              <div class="about-card">
+                <img src="./images/thumbs-up.svg" alt="thumbs-up" />
+                <h3 class="text-[16px] font-bold leading-6 my-4">
+                  Mobil Lengkap
+                </h3>
+                <p class="text-sm font-light leading-5">
+                  Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
+                  terawat
+                </p>
+              </div>
+              <div class="about-card">
+                <img src="./images/price-tag.svg" alt="price-tag" />
+                <h3 class="text-[16px] font-bold leading-6 my-4">
+                  Harga Murah
+                </h3>
+                <p class="text-sm font-light leading-5">
+                  Harga murah dan bersaing, bisa bandingkan harga kami dengan
+                  rental mobil lain
+                </p>
+              </div>
+              <div class="about-card">
+                <img src="./images/24-hours.svg" alt="24-hours" />
+                <h3 class="text-[16px] font-bold leading-6 my-4">
+                  Layanan 24 Jam
+                </h3>
+                <p class="text-sm font-light leading-5">
+                  Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
+                  tersedia di akhir minggu
+                </p>
+              </div>
+              <div class="about-card">
+                <img
+                  src="./images/icon-professional.svg"
+                  alt="icon-professional"
+                />
+                <h3 class="text-[16px] font-bold leading-6 my-4">
+                  Sopir Profesional
+                </h3>
+                <p class="text-sm font-light leading-5">
+                  Sopir yang profesional, berpengalaman, jujur, ramah dan selalu
+                  tepat waktu
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="testimonial" class="flex w-full justify-center -z-10">
+        <div
+          class="container mx-auto flex flex-wrap justify-center items-center overflow-x-hidden mt-[72px] md:mt-[92px] px-4"
+        >
+          <article class="my-4 w-full">
+            <h1 class="text-2xl font-bold leading-9 text-center my-4">
+              Testimonial
+            </h1>
+            <p class="text-sm font-light leading-5 text-center my-4">
+              Berbagai review positif dari para pelanggan kami
+            </p>
+          </article>
+          <div
+            id="testimonial-carousel"
+            class="flex min-w-max transition-transform ease-in-out duration-300"
+          >
+            <div class="testimonial-card">
+              <div class="review-img">
+                <img src="./images/testimonial-2.png" alt="testimonial-2" />
+              </div>
+              <div class="review">
+                <p class="text-sm font-light leading-5 w-full">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-sm font-normal leading-5 w-full">
+                  John Doe 32, Bromo
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="review-img">
+                <img src="./images/testimonial-1.png" alt="testimonial-1" />
+              </div>
+              <div class="review">
+                <p class="text-sm font-light leading-5 w-full">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-sm font-normal leading-5 w-full">
+                  John Doe 32, Bromo
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="review-img">
+                <img src="./images/testimonial-2.png" alt="testimonial-2" />
+              </div>
+              <div class="review">
+                <p class="text-sm font-light leading-5 w-full">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </p>
+                <p class="text-sm font-normal leading-5 w-full">
+                  John Doe 32, Bromo
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="arrow flex justify-between gap-6 my-4">
+            <button
+              id="prev-btn"
+              class="flex justify-center items-center rounded-full border-[#c4c4c4] border-[1px] w-8 h-8 hover:bg-limegreen-700 hover:border-none group"
+            >
+              <img
+                src="./images/left.svg"
+                alt="left"
+                class="group-hover:invert"
+              />
+            </button>
+            <button
+              id="next-btn"
+              class="flex justify-center items-center rounded-full border-[#c4c4c4] border-[1px] w-8 h-8 hover:bg-limegreen-700 hover:border-none group"
+            >
+              <img
+                src="./images/right.svg"
+                alt="right"
+                class="group-hover:invert"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="order" class="flex w-full justify-center px-4">
+        <div
+          class="container mx-auto items-center justify-center flex flex-wrap rounded-[13px] bg-darkblue-700 p-12 mt-[72px] md:mt-[92px]"
+        >
+          <article class="text-white text-center w-full">
+            <h2 class="text-2xl leading-9 font-bold my-4">
+              Sewa Mobil di (Lokasimu) Sekarang
+            </h2>
+            <p class="text-sm leading-5 font-light my-4 xl:px-80">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              quam nesciunt veniam nobis earum molestiae voluptatem deserunt
+              commodi nam repellat.
+            </p>
+          </article>
+          <button
+            class="bg-limegreen-700 rounded-sm leading-5 my-4 px-4 py-3 text-white text-sm font-bold"
+          >
+            Mulai Sewa Mobil
+          </button>
+        </div>
+      </section>
+      <section id="faq" class="flex w-full justify-center">
+        <div
+          class="container mx-auto items-center xl:items-start flex flex-wrap xl:flex-nowrap px-4 mt-[72px] md:mt-[92px]"
+        >
+          <article class="w-full xl:w-1/2">
+            <h2
+              class="text-2xl leading-9 font-bold my-4 xl:mb-4 text-center xl:text-start"
+            >
+              Frequently Asked Question
+            </h2>
+            <p
+              class="text-sm leading-5 font-light my-4 text-center xl:text-start"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </article>
+          <div class="flex flex-wrap gap-4 xl:w-1/2">
+            <div class="accordion-item">
+              <button
+                class="accordion"
+                type="button"
+                data-accordion-target="#collapse1"
+                aria-expanded="false"
+                aria-controls="collapse1"
+              >
+                Apa saja syarat yang dibutuhkan?
+              </button>
+              <div id="collapse1" class="accordion-collapse">
+                <p class="p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Porro similique laborum cupiditate illum ipsum, neque iure
+                  provident beatae laudantium amet totam voluptates fuga
+                  possimus sit pariatur ut reprehenderit odio saepe.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion"
+                type="button"
+                data-accordion-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                Berapa hari minimal sewa mobil lepas kunci?
+              </button>
+              <div id="collapse2" class="accordion-collapse">
+                <p class="p-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia hic, maxime facere esse quisquam possimus? Impedit
+                  assumenda ea maiores omnis ad fuga nihil. Aut in inventore
+                  eum! Aperiam, veritatis reiciendis?
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion"
+                type="button"
+                data-accordion-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                Berapa hari sebelumnya sebaiknya booking sewa mobil?
+              </button>
+              <div id="collapse3" class="accordion-collapse">
+                <p class="p-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Impedit ea illo cupiditate dicta perferendis inventore sunt at
+                  incidunt quidem aspernatur, ex dolor soluta qui error, eaque
+                  consectetur magnam ab. Exercitationem?
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion"
+                type="button"
+                data-accordion-target="#collapse4"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              >
+                Apakah Ada biaya antar-jemput?
+              </button>
+              <div id="collapse4" class="accordion-collapse">
+                <p class="p-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  officiis, illo eaque necessitatibus, vitae dolorum harum magni
+                  quos eum error enim. Architecto reprehenderit eveniet deserunt
+                  et. Accusamus odit nostrum aperiam.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion"
+                type="button"
+                data-accordion-target="#collapse5"
+                aria-expanded="false"
+                aria-controls="collapse5"
+              >
+                Bagaimana jika terjadi kecelakaan
+              </button>
+              <div id="collapse5" class="accordion-collapse">
+                <p class="p-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto cumque fuga repellendus sapiente nisi aspernatur,
+                  architecto, consequatur veritatis adipisci illo debitis
+                  quisquam cupiditate, asperiores iste aut rem. Amet, accusamus
+                  nobis?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex w-full justify-center">
+      <div
+        class="container mx-auto items-center xl:items-start flex flex-wrap xl:flex-nowrap my-7 ps-4 md:my-20"
+      >
+        <div
+          class="address flex flex-wrap gap-4 xl:w-1/4 text-sm font-light leading-5 my-2"
+        >
+          <p class="w-full">
+            Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+          </p>
+          <p class="w-full">binarcarrental@gmail.com</p>
+          <p class="w-full">081-233-334-808</p>
+        </div>
+        <div
+          class="link flex flex-wrap gap-4 w-full xl:w-1/4 text-sm font-normal leading-5 my-2"
+        >
+          <a href="#services" class="w-full">Our services</a>
+          <a href="#about" class="w-full">Why Us</a>
+          <a href="#testimonial" class="w-full">Testimonial</a>
+          <a href="#faq" class="w-full">FAQ</a>
+        </div>
+        <div
+          class="contact flex flex-wrap gap-4 w-full xl:w-1/4 text-sm font-light leading-5 my-2"
+        >
+          <p class="w-full">Connect with us</p>
+          <div class="social flex w-full gap-4">
+            <a href="#"><img src="./images/facebook.svg" alt="facebook" /></a>
+            <a href="#"><img src="./images/instagram.svg" alt="instagram" /></a>
+            <a href="#"><img src="./images/twitter.svg" alt="twitter" /></a>
+            <a href="#"><img src="./images/email.svg" alt="email" /></a>
+            <a href="#"><img src="./images/twitch.svg" alt="twitch" /></a>
+          </div>
+        </div>
+        <div
+          class="copyright flex flex-wrap gap-4 xl:w-1/4 text-sm font-light leading-5 my-2"
+        >
+          <p class="w-full">Copyright Binar 2022</p>
+          <a href="#home" class="bg-darkblue-700 text-darkblue-700 px-5 my-2"
+            >logo</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>BCR | Binar Car Rental</title>
+  </head>
+  <body>
+    <header class="fixed w-full flex justify-center bg-[#f1f3ff] z-[5]">
+      <div class="container px-4 py-6 flex justify-between">
+        <a href="/" class="bg-darkblue-700 text-darkblue-700 px-5">logo</a>
+        <button id="nav-toggle" class="z-50 block md:hidden">
+          <span
+            class="nav-line origin-top-left transition duration-300 ease-in-out"
+          ></span>
+          <span class="nav-line transition duration-300 ease-in-out"></span>
+          <span
+            class="nav-line origin-bottom-left transition duration-300 ease-in-out"
+          ></span>
+        </button>
+        <nav
+          id="nav-menu"
+          class="max-md:absolute max-md:right-0 max-md:top-0 max-md:h-screen max-md:w-1/2 max-md:bg-white max-md:py-7 max-md:px-4 z-20 hidden md:flex md:gap-8"
+        >
+          <ul
+            class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap text-sm leading-5 gap-4 md:gap-8 md:px-4 md:py-3"
+          >
+            <li class="max-md:w-full">
+              <a href="#services">Our Services</a>
+            </li>
+            <li class="max-md:w-full"><a href="#about">Why Us</a></li>
+            <li class="max-md:w-full">
+              <a href="#testimonial">Testimonial</a>
+            </li>
+            <li class="max-md:w-full"><a href="#faq">FAQ</a></li>
+          </ul>
+          <button
+            class="bg-limegreen-700 rounded-sm leading-5 max-md:my-4 px-4 py-3 text-white text-sm font-bold"
+          >
+            Register
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="flex w-full xl:h-1/2 justify-center bg-[#f1f3ff]">
+        <div
+          class="container flex flex-wrap xl:flex-nowrap mt-[72px] md:mt-[92px] px-4 items-center"
+        >
+          <article class="w-full xl:w-1/2">
+            <h1 class="text-4xl leading-normal font-bold my-2">
+              Sewa &amp; Rental Mobil Terbaik di kawasan (Lokasimu)
+            </h1>
+            <p class="text-sm font-light leading-5 my-2">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+          </article>
+          <div class="mt-6 w-full xl:w-1/2 flex justify-center items-center">
+            <img src="./images/img_car.png" alt="Mercedes EQC 300kW Edition" />
+          </div>
+        </div>
+      </section>
+      <section id="form" class="flex w-full justify-center px-4 xl:absolute xl:top-[345px] 2xl:top-96">
+        <div class="container mx-auto items-center justify-center flex flex-wrap bg-white p-6 mt-[72px] shadow-high rounded-lg">
+          <form class="flex flex-wrap xl:grid xl:grid-cols-9 gap-2 xl:gap-3" id="car-form">
+            <div class="flex flex-wrap w-full xl:col-span-2">
+              <label for="driver" class="w-full font-display text-sm text-neutral-700">Tipe Driver</label>
+              <select name="driver" id="driver" class="border-neutral-300 mt-1 text-neutral-300 text-sm font-display w-full rounded-sm py-2 px-[12px] border">
+                <option class="font-display text-sm text-neutral-700">Pilih Tipe Driver</option>
+                <option class="font-display text-sm text-neutral-700" value="true">Dengan Sopir</option>
+                <option class="font-display text-sm text-neutral-700" value="false">Tanpa Sopir (Lepas Kunci)</option>
+              </select>
+            </div>
+            <div class="flex flex-wrap w-full xl:col-span-2">
+              <label for="date" class="w-full font-display text-sm text-neutral-700">Tanggal</label>
+              <input type="date" id="date" placeholder="Pilih Tanggal" class="border-neutral-300 mt-1 text-neutral-300 text-sm font-display w-full rounded-sm py-2 px-[12px] border">
+            </div>
+            <div class="flex flex-wrap w-full xl:col-span-2">
+              <label for="time" class="w-full font-display text-sm text-neutral-700">Waktu Jemput/Ambil</label>
+              <input type="time" id="time" placeholder="Pilih Waktu" class="border-neutral-300 mt-1 text-neutral-300 font-display text-sm placeholder:text-sm placeholder:font-display w-full rounded-sm py-2 px-[12px] border">
+            </div>
+            <div class="flex flex-wrap w-full xl:col-span-2">
+              <label for="passenger" class="w-full font-display text-sm text-neutral-700">Jumlah Penumpang (optional)</label>
+              <input type="number" id="passenger" placeholder="Jumlah Penumpang" class="border-neutral-300 mt-1 placeholder:text-sm placeholder:font-display w-full rounded-sm py-2 px-[12px] border">
+            </div>
+            <div class="flex flex-wrap w-full xl:flex-col-reverse xl:col-span-1">
+              <button type="submit" id="search" class="bg-limegreen-700 py-2 px-[12px] rounded-sm text-white font-bold text-sm mt-1 disabled:bg-limegreen-100" disabled>
+                Cari Mobil
+              </button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </section>
+      <section id="result" class="flex w-full justify-center xl:mt-14">
+        <!-- <div id="not-found" class="container mx-auto items-center justify-center hidden p-4 xl:py-4 xl:px-0">
+          <h2 class="bg-danger bg-opacity-10 py-3 px-4 rounded-lg w-full text-danger text-sm font-light">Data tidak ditemukan</h2>
+        </div>
+        <div id="result-col" class="container mx-auto items-center justify-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-4 xl:py-4 xl:px-0">
+          <div class="flex flex-wrap gap-4 bg-neutral-100 shadow-low rounded-lg p-6 h-fit">
+            <img src="./images/car01.min.jpg" alt="" class="w-full h-2/5 object-cover rounded-lg">
+            <p class="w-full text-neutral-900 text-sm">Tipe Mobil</p>
+            <p class="w-full text-neutral-900 text-sm font-bold">Rp. 4300000 / hari</p>
+            <p class="w-full text-neutral-900 text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>4 orang</p>
+            </div>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>Manual</p>
+            </div>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>Tahun 2020</p>
+            </div>
+            <a href="#" class="w-full px-3 py-2 rounded-sm font-bold text-sm text-neutral-100 bg-limegreen-700 text-center">Pilih Mobil</a>
+          </div>
+          <div class="flex flex-wrap gap-4 bg-neutral-100 shadow-low rounded-lg p-6 h-fit">
+            <img src="./images/car01.min.jpg" alt="" class="w-full h-2/5 object-cover rounded-lg">
+            <p class="w-full text-neutral-900 text-sm">Tipe Mobil</p>
+            <p class="w-full text-neutral-900 text-sm font-bold">Rp. 4300000 / hari</p>
+            <p class="w-full text-neutral-900 text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>4 orang</p>
+            </div>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>Manual</p>
+            </div>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>Tahun 2020</p>
+            </div>
+            <a href="#" class="w-full px-3 py-2 rounded-sm font-bold text-sm text-neutral-100 bg-limegreen-700 text-center">Pilih Mobil</a>
+          </div>
+          <div class="flex flex-wrap gap-4 bg-neutral-100 shadow-low rounded-lg p-6 h-fit">
+            <img src="./images/car01.min.jpg" alt="" class="w-full h-2/5 object-cover rounded-lg">
+            <p class="w-full text-neutral-900 text-sm">Tipe Mobil</p>
+            <p class="w-full text-neutral-900 text-sm font-bold">Rp. 4300000 / hari</p>
+            <p class="w-full text-neutral-900 text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>4 orang</p>
+            </div>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>Manual</p>
+            </div>
+            <div class="w-full text-sm">
+              <img src="" alt="">
+              <p>Tahun 2020</p>
+            </div>
+            <a href="#" class="w-full px-3 py-2 rounded-sm font-bold text-sm text-neutral-100 bg-limegreen-700 text-center">Pilih Mobil</a>
+          </div>
+        </div> -->
+      </section>
+    </main>
+    <footer class="flex w-full xl:h-1/2 justify-center">
+      <div
+        class="container mx-auto items-center xl:items-start flex flex-wrap xl:flex-nowrap my-7 ps-4 md:my-20"
+      >
+        <div
+          class="address flex flex-wrap gap-4 xl:w-1/4 text-sm font-light leading-5 my-2"
+        >
+          <p class="w-full">
+            Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+          </p>
+          <p class="w-full">binarcarrental@gmail.com</p>
+          <p class="w-full">081-233-334-808</p>
+        </div>
+        <div
+          class="link flex flex-wrap gap-4 w-full xl:w-1/4 text-sm font-normal leading-5 my-2"
+        >
+          <a href="#services" class="w-full">Our services</a>
+          <a href="#about" class="w-full">Why Us</a>
+          <a href="#testimonial" class="w-full">Testimonial</a>
+          <a href="#faq" class="w-full">FAQ</a>
+        </div>
+        <div
+          class="contact flex flex-wrap gap-4 w-full xl:w-1/4 text-sm font-light leading-5 my-2"
+        >
+          <p class="w-full">Connect with us</p>
+          <div class="social flex w-full gap-4">
+            <a href="#"><img src="./images/facebook.svg" alt="facebook" /></a>
+            <a href="#"><img src="./images/instagram.svg" alt="instagram" /></a>
+            <a href="#"><img src="./images/twitter.svg" alt="twitter" /></a>
+            <a href="#"><img src="./images/email.svg" alt="email" /></a>
+            <a href="#"><img src="./images/twitch.svg" alt="twitch" /></a>
+          </div>
+        </div>
+        <div
+          class="copyright flex flex-wrap gap-4 xl:w-1/4 text-sm font-light leading-5 my-2"
+        >
+          <p class="w-full">Copyright Binar 2022</p>
+          <a href="#home" class="bg-darkblue-700 text-darkblue-700 px-5 my-2"
+            >logo</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>
